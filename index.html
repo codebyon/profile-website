@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Auditya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+
+
+  <!-- Toggle Dark Mode -->
+  <div class="fixed top-4 right-4">
+    <button onclick="document.body.classList.toggle('dark')" class="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-600">
+      🌙
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex flex-col items-center justify-center min-h-screen px-4 py-12 text-center">
+    <img src="images/foto.jpg" alt="Foto Profil" class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg mb-4" />
+    <h1 class="text-3xl font-bold">Yonathan Auditya</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300">Software Engineer & Web Developer</p>
+
+    <!-- Sosial -->
+    <div class="flex gap-6 my-4">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/audtyz" target="_blank" class="hover:scale-110 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" class="w-6 h-6" />
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/audt.ya/" target="_blank" class="hover:scale-110 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-6 h-6" />
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6282135186660" target="_blank" class="hover:scale-110 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6" />
+    </a>
+
+    <!-- GitHub Logo -->
+    <a href="https://github.com/codebyon" target="_blank" class="hover:scale-110 transition">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="w-6 h-6" />
+    </a>
+
+    <!-- Gmail Logo -->
+    <a href="mailto:yonathandaresti@gmail.com" class="hover:scale-110 transition">
+        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" class="w-6 h-6" />
+    </a>
+    </div>
+
+
+    <!-- Tentang -->
+    <section class="max-w-xl mt-6">
+      <h2 class="text-xl font-semibold mb-2">Tentang Saya</h2>
+      <p>Saya seorang lulusan IT yang sedang belajar menjadi software engineer. Fokus utama saya adalah pengembangan web menggunakan HTML, CSS, JavaScript, dan teknologi modern lainnya.</p>
+    </section>
+
+    <!-- Kontak -->
+    <section class="max-w-xl mt-8 w-full">
+      <h2 class="text-xl font-semibold mb-2">Kontak Saya</h2>
+      <form action="mailto:kamu@email.com" method="post" enctype="text/plain" class="flex flex-col gap-3">
+        <input type="text" name="name" placeholder="Nama Anda" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700" />
+        <input type="email" name="email" placeholder="Email Anda" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700" />
+        <textarea name="message" placeholder="Pesan Anda..." rows="4" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700"></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
