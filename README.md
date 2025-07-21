@@ -8,7 +8,7 @@ Website portfolio pribadi dengan Tailwind CSS dan dark mode.
 - Desain simpel & elegan
 
 ## Live Website
-Akan tersedia setelah deployment (lihat langkah 2)
+https://codebyon.github.io/profile-website/
 
 ## Author
 [@codebyon](https://github.com/codebyon)
