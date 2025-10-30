@@ -169,14 +169,70 @@ body {
   padding: 24px;
   border-radius: 12px;
 }
-.modal-content img {
-  width: 100%;
+.social-links {
+  display: flex;
+  gap: 12px;
   margin-top: 16px;
-  border-radius: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping on small widths */
 }
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  transition: transform 0.16s ease, background 0.16s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* Contact-specific adjustments: make buttons equal width on larger screens */
+.contact-links {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.contact-links a {
+  min-width: 160px;
+  flex: 1 1 160px; /* allow growing, but keep minimum */
+}
+
+/* Mobile: stack buttons full-width */
+@media (max-width: 640px) {
+  .social-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .social-links a {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-links a {
+    flex: none;
+    width: 100%;
+  }
+}
+
 #modal-close {
-  margin-top: 14px;
+  margin-top: 20px;
   padding: 8px 16px;
   background: #ffffff10;
   border-radius: 8px;
+  width: 100%;
 }

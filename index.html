@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Yonathan Auditya — Website Specialist & Digital Content</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="min-h-screen">
@@ -31,7 +31,9 @@
               target="_blank"
               >View LinkedIn</a
             >
-            <a class="btn-outline" href="mailto:yonathandaresti@gmail.com"
+            <a
+              class="btn-outline"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=yonathandaresti@gmail.com"
               >Email</a
             >
             <a
@@ -50,10 +52,9 @@
             <div class="glass card">
               <h2 class="section-title">About</h2>
               <p class="section-text">
-                I am a Website Specialist and Digital Content Creator with a
-                Computer Science background. I design and build efficient,
-                visually engaging digital experiences using HTML, CSS, and
-                JavaScript...
+                I am a Website Specialist and Digital Content Creator. I design
+                and build efficient, visually engaging digital experiences using
+                HTML, CSS, and JavaScript...
               </p>
               <p class="section-text">
                 I collaborate closely with marketing and creative teams to
@@ -104,8 +105,7 @@
               </div>
 
               <p class="tools-text">
-                Tools: VS Code, Git, TailwindCSS, Canva, Premiere Pro, Figma,
-                Google Analytics
+                Tools: VS Code, Git, Canva, Corel Draw, Google Analytics
               </p>
             </div>
 
@@ -121,7 +121,8 @@
                   class="project-card"
                   data-title="Fortuna Steel"
                   data-desc="Website product display and social media content management."
-                  data-img="images/project1.png"
+                  data-web="https://fortunasteel.com/"
+                  data-ig="https://www.instagram.com/fortunasteel/"
                 >
                   <h4>Fortuna Steel</h4>
                   <p>Website & Social Media Content</p>
@@ -131,7 +132,8 @@
                   class="project-card"
                   data-title="Toko Baja Merah Putih"
                   data-desc="Product catalog website + SEO optimization."
-                  data-img="images/project2.png"
+                  data-web="https://tokobajamerahputih.com/"
+                  data-ig="https://www.instagram.com/tokobajamerahputih/"
                 >
                   <h4>Toko Baja Merah Putih</h4>
                   <p>Catalog Website</p>
@@ -205,17 +207,41 @@
               <p class="section-text">
                 Open for freelance, collaboration or full-time roles.
               </p>
-              <a
-                class="btn-accent block text-center"
-                href="mailto:yonathandaresti@gmail.com"
-                >Hire / Collaborate</a
-              >
+              <div class="social-links contact-links">
+                <a
+                  id="contact-wa"
+                  class="btn-accent"
+                  href="https://wa.me/6282245081116"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/whatsapp-icon.svg"
+                    alt="WhatsApp"
+                    class="social-icon"
+                  />
+                  <span>Chat on WhatsApp</span>
+                </a>
+
+                <a
+                  id="contact-mail"
+                  class="btn-outline"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yonathandaresti@gmail.com"
+                >
+                  <img
+                    src="images/gmail-icon.svg"
+                    alt="Email"
+                    class="social-icon"
+                  />
+                  <span>Email</span>
+                </a>
+              </div>
             </div>
           </aside>
         </div>
 
         <footer class="footer">
-          © <span id="year"></span> Yonathan Auditya
+          © <span id="year"></span> | Yonathan Auditya
         </footer>
       </div>
     </main>
@@ -224,11 +250,28 @@
       <div class="modal-content glass">
         <h4 id="modal-title"></h4>
         <p id="modal-desc"></p>
-        <img id="modal-img" />
+        <div class="social-links">
+          <a id="web-link" href="#" target="_blank">
+            <img
+              src="images/website-icon.png"
+              alt="Website"
+              class="social-icon"
+            />
+            <span>View Website</span>
+          </a>
+          <a id="ig-link" href="#" target="_blank">
+            <img
+              src="images/instagram-icon.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+            <span>View Instagram</span>
+          </a>
+        </div>
         <button id="modal-close">Close</button>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
