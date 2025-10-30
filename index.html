@@ -1,79 +1,234 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profil Yonathan Auditya</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    };
-  </script>
-</head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yonathan Auditya — Website Specialist & Digital Content</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen">
+    <main
+      class="min-h-screen flex flex-col items-center justify-start py-12 px-6"
+    >
+      <div class="w-full max-w-4xl">
+        <!-- HERO -->
+        <header class="text-center mb-8">
+          <div class="inline-block neon glow rounded-full p-1">
+            <img
+              src="images/foto.png"
+              alt="Yonathan Auditya"
+              class="profile-img"
+            />
+          </div>
+          <h1 class="hero-name">Yonathan Auditya</h1>
+          <p class="hero-title">Website Specialist • Digital Content</p>
 
+          <div class="hero-buttons">
+            <a
+              class="btn-accent"
+              href="https://www.linkedin.com/in/yonathanuditya/"
+              target="_blank"
+              >View LinkedIn</a
+            >
+            <a class="btn-outline" href="mailto:yonathandaresti@gmail.com"
+              >Email</a
+            >
+            <a
+              class="btn-outline"
+              href="https://github.com/codebyon"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </header>
 
-  <!-- Toggle Dark Mode -->
-  <div class="fixed top-4 right-4">
-    <button onclick="document.body.classList.toggle('dark')" class="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-600">
-      🌙
-    </button>
-  </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- LEFT COLUMN -->
+          <section class="md:col-span-2 space-y-6">
+            <!-- ABOUT -->
+            <div class="glass card">
+              <h2 class="section-title">About</h2>
+              <p class="section-text">
+                I am a Website Specialist and Digital Content Creator with a
+                Computer Science background. I design and build efficient,
+                visually engaging digital experiences using HTML, CSS, and
+                JavaScript...
+              </p>
+              <p class="section-text">
+                I collaborate closely with marketing and creative teams to
+                ensure every digital touchpoint aligns with brand identity...
+              </p>
+            </div>
 
-  <!-- Main Content -->
-  <main class="flex flex-col items-center justify-center min-h-screen px-4 py-12 text-center">
-    <img src="images/foto.jpg" alt="Foto Profil" class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg mb-4" />
-    <h1 class="text-3xl font-bold">Yonathan Auditya</h1>
-    <p class="text-lg text-gray-600 dark:text-gray-300">Software Engineer & Web Developer</p>
+            <!-- SKILLS -->
+            <div class="glass card">
+              <h3 class="section-title">Skills & Tools</h3>
 
-    <!-- Sosial -->
-    <div class="flex gap-6 my-4">
+              <div class="skills-grid">
+                <div class="skill">
+                  <div class="skill-label">
+                    <span>HTML & CSS</span><span>90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="bar-fill" data-target="90"></div>
+                  </div>
+                </div>
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/audtyz" target="_blank" class="hover:scale-110 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" class="w-6 h-6" />
-    </a>
+                <div class="skill">
+                  <div class="skill-label">
+                    <span>JavaScript</span><span>75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="bar-fill" data-target="75"></div>
+                  </div>
+                </div>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/audt.ya/" target="_blank" class="hover:scale-110 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-6 h-6" />
-    </a>
+                <div class="skill">
+                  <div class="skill-label">
+                    <span>Content Production</span><span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="bar-fill" data-target="85"></div>
+                  </div>
+                </div>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/6282135186660" target="_blank" class="hover:scale-110 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6" />
-    </a>
+                <div class="skill">
+                  <div class="skill-label">
+                    <span>SEO & Analytics</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="bar-fill" data-target="70"></div>
+                  </div>
+                </div>
+              </div>
 
-    <!-- GitHub Logo -->
-    <a href="https://github.com/codebyon" target="_blank" class="hover:scale-110 transition">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="w-6 h-6" />
-    </a>
+              <p class="tools-text">
+                Tools: VS Code, Git, TailwindCSS, Canva, Premiere Pro, Figma,
+                Google Analytics
+              </p>
+            </div>
 
-    <!-- Gmail Logo -->
-    <a href="mailto:yonathandaresti@gmail.com" class="hover:scale-110 transition">
-        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" class="w-6 h-6" />
-    </a>
+            <!-- PORTFOLIO -->
+            <div class="glass card">
+              <div class="flex justify-between items-center">
+                <h3 class="section-title">Portfolio / Projects</h3>
+                <span class="section-sub">Click a card for details</span>
+              </div>
+
+              <div class="portfolio-grid">
+                <article
+                  class="project-card"
+                  data-title="Fortuna Steel"
+                  data-desc="Website product display and social media content management."
+                  data-img="images/project1.png"
+                >
+                  <h4>Fortuna Steel</h4>
+                  <p>Website & Social Media Content</p>
+                </article>
+
+                <article
+                  class="project-card"
+                  data-title="Toko Baja Merah Putih"
+                  data-desc="Product catalog website + SEO optimization."
+                  data-img="images/project2.png"
+                >
+                  <h4>Toko Baja Merah Putih</h4>
+                  <p>Catalog Website</p>
+                </article>
+
+                <article
+                  class="project-card"
+                  data-title="Content Production"
+                  data-desc="Photo & video campaigns for product marketing."
+                  data-img="images/project3.png"
+                >
+                  <h4>Content Production</h4>
+                  <p>Photo & Short-Video</p>
+                </article>
+
+                <article
+                  class="project-card"
+                  data-title="Maintenance & Custom Work"
+                  data-desc="General web maintenance & updates."
+                  data-img="images/project4.png"
+                >
+                  <h4>Web Maintenance</h4>
+                  <p>Custom Support</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- RIGHT COLUMN -->
+          <aside class="space-y-6">
+            <!-- EXPERIENCE -->
+            <div class="glass card">
+              <h3 class="section-title">Experience</h3>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div>
+                    <h4>Web Specialist | Digital Content</h4>
+                    <p class="timeline-meta">
+                      PT Aurora Perdana Mandiri · 2025 — Present
+                    </p>
+                    <ul class="timeline-list">
+                      <li>Develop & maintain company website</li>
+                      <li>Photo & video documentation</li>
+                      <li>Video editing & presentation production</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div>
+                    <h4>Digital Content</h4>
+                    <p class="timeline-meta">
+                      Canting Creative Agency · 2020 — 2022
+                    </p>
+                    <ul class="timeline-list">
+                      <li>Manage client social media accounts</li>
+                      <li>Produce photo & short-form content</li>
+                      <li>Engagement tracking & monthly reporting</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="glass card">
+              <h3 class="section-title">Contact</h3>
+              <p class="section-text">
+                Open for freelance, collaboration or full-time roles.
+              </p>
+              <a
+                class="btn-accent block text-center"
+                href="mailto:yonathandaresti@gmail.com"
+                >Hire / Collaborate</a
+              >
+            </div>
+          </aside>
+        </div>
+
+        <footer class="footer">
+          © <span id="year"></span> Yonathan Auditya
+        </footer>
+      </div>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content glass">
+        <h4 id="modal-title"></h4>
+        <p id="modal-desc"></p>
+        <img id="modal-img" />
+        <button id="modal-close">Close</button>
+      </div>
     </div>
 
-
-    <!-- Tentang -->
-    <section class="max-w-xl mt-6">
-      <h2 class="text-xl font-semibold mb-2">Tentang Saya</h2>
-      <p>Saya seorang lulusan IT yang sedang belajar menjadi software engineer. Fokus utama saya adalah pengembangan web menggunakan HTML, CSS, JavaScript, dan teknologi modern lainnya.</p>
-    </section>
-
-    <!-- Kontak -->
-    <section class="max-w-xl mt-8 w-full">
-      <h2 class="text-xl font-semibold mb-2">Kontak Saya</h2>
-      <form action="mailto:kamu@email.com" method="post" enctype="text/plain" class="flex flex-col gap-3">
-        <input type="text" name="name" placeholder="Nama Anda" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700" />
-        <input type="email" name="email" placeholder="Email Anda" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700" />
-        <textarea name="message" placeholder="Pesan Anda..." rows="4" required class="p-2 rounded border border-gray-300 dark:bg-gray-800 dark:border-gray-700"></textarea>
-        <button type="submit" class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Kirim</button>
-      </form>
-    </section>
-  </main>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
